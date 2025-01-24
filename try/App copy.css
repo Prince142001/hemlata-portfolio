@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400..800&display=swap");
+body {
+  font-family: "Wix Madefor Text", sans-serif;
+  font-optical-sizing: auto;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.hs-moving-text line {
+  transform-origin: 0 0;
+}
+
+.gg-grid {
+  /* width: 100%; */
+  /* max-width: 60rem; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
+  transform: rotateX(45deg) rotateZ(45deg);
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.gg-grid-block {
+  width: 50%;
+  /* min-height: 11.25rem; */
+  padding: 0.5rem;
+}
+
+/* .image-grid {
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
+  transform: rotateX(45deg) rotateZ(45deg);
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+} */
+
+.gg-grid .gb-fig-tile:hover .gb-tile-img {
+  top: -1rem;
+  left: -1rem;
+}
+
+.gg-grid .gb-tile-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: opacity, top, left, box-shadow;
+  transition-property: opacity, top, left, box-shadow;
+}
+
+.gb-fig-tile {
+  display: block;
+}
+
+.gb-fig-tile:hover .gb-tile-img {
+  opacity: 1;
+}
+
+.gb-fig-tile:hover .gb-fig-tile {
+  display: block;
+}
+
+.gb-fig-tile:hover .gb-fig-tile:hover .gb-tile-img {
+  opacity: 0.5;
+}
+
+/* .gb-tile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.gb-tile-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.125s;
+  transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.about-me-btn {
+  /* width: fit-content; */
+  font-size: 16px;
+  position: relative;
+  margin: auto;
+  padding: 1em 2.5em 1em 2.5em;
+  border: none;
+  background: #fff;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+  /* display: block; */
+  margin-top: 3rem;
+}
+
+.about-me-btn:active {
+  transform: scale(0.95);
+}
+
+.about-me-btn span {
+  color: #464646;
+}
+
+.about-me-btn .amb-border {
+  position: absolute;
+  border: 0.15em solid #fff;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 3em;
+  transform: translate(-50%, -50%);
+}
+
+.about-me-btn:hover .amb-border {
+  display: block;
+  width: 9.9em;
+  height: 3.7em;
+}
+
+/* .full-rounded {
+  border-radius: 2em;
+} */
+
+/* .gg-grid {
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    top: -100%;
+    right: 0;
+  }
+} */
+/* .gb-fig-tile:hover .tile-img1 {
+  box-shadow: 5px 5px rgba(244, 170, 200, 0.4),
+    10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
+    20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img2 {
+  box-shadow: 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+    15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+    25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img3 {
+  box-shadow: 5px 5px rgba(214, 221, 244, 0.4),
+    10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
+    20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img4 {
+  box-shadow: 5px 5px rgba(82, 119, 192, 0.4), 10px 10px rgba(82, 119, 192, 0.3),
+    15px 15px rgba(82, 119, 192, 0.2), 20px 20px rgba(82, 119, 192, 0.1),
+    25px 25px rgba(82, 119, 192, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img5 {
+  box-shadow: 5px 5px rgba(138, 218, 245, 0.4),
+    10px 10px rgba(138, 218, 245, 0.3), 15px 15px rgba(138, 218, 245, 0.2),
+    20px 20px rgba(138, 218, 245, 0.1), 25px 25px rgba(138, 218, 245, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img6 {
+  box-shadow: 5px 5px rgba(203, 215, 193, 0.4),
+    10px 10px rgba(203, 215, 193, 0.3), 15px 15px rgba(203, 215, 193, 0.2),
+    20px 20px rgba(203, 215, 193, 0.1), 25px 25px rgba(203, 215, 193, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img7 {
+  box-shadow: 5px 5px rgba(91, 209, 250, 0.4), 10px 10px rgba(91, 209, 250, 0.3),
+    15px 15px rgba(91, 209, 250, 0.2), 20px 20px rgba(91, 209, 250, 0.1),
+    25px 25px rgba(91, 209, 250, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img8 {
+  box-shadow: 5px 5px rgba(145, 156, 196, 0.4),
+    10px 10px rgba(145, 156, 196, 0.3), 15px 15px rgba(145, 156, 196, 0.2),
+    20px 20px rgba(145, 156, 196, 0.1), 25px 25px rgba(145, 156, 196, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img9 {
+  box-shadow: 5px 5px rgba(188, 97, 129, 0.4), 10px 10px rgba(188, 97, 129, 0.3),
+    15px 15px rgba(188, 97, 129, 0.2), 20px 20px rgba(188, 97, 129, 0.1),
+    25px 25px rgba(188, 97, 129, 0.05);
+}
+
+.gb-fig-tile:hover .tile-img10 {
+  box-shadow: 5px 5px rgba(4, 140, 231, 0.4), 10px 10px rgba(4, 140, 231, 0.3),
+    15px 15px rgba(4, 140, 231, 0.2), 20px 20px rgba(4, 140, 231, 0.1),
+    25px 25px rgba(4, 140, 231, 0.05);
+} */

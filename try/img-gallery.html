@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* Adds spacing between images */
+            justify-content: center;
+            /* Aligns items in the center of the row */
+            padding: 10px;
+            /* Optional padding around the gallery */
+        }
+
+        div figure {
+            margin: 0;
+            /* Removes default margin from figure */
+            padding: 0;
+            flex: 1 1 calc(25% - 10px);
+            /* Responsive basis: adjust width as needed */
+            box-sizing: border-box;
+            /* Ensures padding doesn't affect width */
+        }
+
+        div figure img {
+            width: 100%;
+            /* Make images responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            border-radius: 5px;
+            /* Optional: rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Optional: add a shadow */
+        }
+
+        @media (max-width: 768px) {
+            div figure {
+                flex: 1 1 calc(50% - 10px);
+                /* Adjust for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            div figure {
+                flex: 1 1 calc(100% - 10px);
+                /* Single column on very small screens */
+            }
+        }
+    </style>
+    <title>Responsive Image Gallery</title>
+</head>
+
+<body>
+    <div>
+        <figure>
+            <img src="../src/assets/basin/07.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/basin/08.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/basin/09.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/basin/10.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/basin/11.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/01.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/02.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/04.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/05.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/07.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/09.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../src/assets/renders/bulldozer/10.jpg" alt="">
+        </figure>
+    </div>
+</body>
+
+</html>
