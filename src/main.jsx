@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import Gallery from "./Gallery.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/hemlata-portfolio">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/gallery" element={<Gallery />} />
